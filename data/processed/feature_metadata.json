@@ -1,0 +1,226 @@
+[
+  {
+    "feature_name": "amount",
+    "feature_family": "basic_transaction",
+    "description": "Observable transaction amount or calendar component.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "log_amount",
+    "feature_family": "basic_transaction",
+    "description": "Observable transaction amount or calendar component.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "hour",
+    "feature_family": "basic_transaction",
+    "description": "Observable transaction amount or calendar component.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "day_of_week",
+    "feature_family": "basic_transaction",
+    "description": "Observable transaction amount or calendar component.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "is_weekend",
+    "feature_family": "basic_transaction",
+    "description": "Observable transaction amount or calendar component.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "customer_transaction_count_before",
+    "feature_family": "customer_behavior",
+    "description": "Historical customer behavior available before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "customer_avg_amount_before",
+    "feature_family": "customer_behavior",
+    "description": "Historical customer behavior available before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "customer_median_amount_before",
+    "feature_family": "customer_behavior",
+    "description": "Historical customer behavior available before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "customer_amount_std_before",
+    "feature_family": "customer_behavior",
+    "description": "Historical customer behavior available before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "customer_merchant_count_before",
+    "feature_family": "entity_reuse",
+    "description": "Historical entity relationship count before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "customer_device_count_before",
+    "feature_family": "customer_behavior",
+    "description": "Historical customer behavior available before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "customer_instrument_count_before",
+    "feature_family": "customer_behavior",
+    "description": "Historical customer behavior available before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "customer_txn_count_5m",
+    "feature_family": "velocity",
+    "description": "Count of strictly earlier transactions in a bounded time window.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "customer_txn_count_30m",
+    "feature_family": "velocity",
+    "description": "Count of strictly earlier transactions in a bounded time window.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "customer_txn_count_1h",
+    "feature_family": "velocity",
+    "description": "Count of strictly earlier transactions in a bounded time window.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "customer_txn_count_24h",
+    "feature_family": "velocity",
+    "description": "Count of strictly earlier transactions in a bounded time window.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "amount_vs_customer_mean",
+    "feature_family": "customer_behavior",
+    "description": "Historical customer behavior available before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "amount_vs_customer_median",
+    "feature_family": "customer_behavior",
+    "description": "Historical customer behavior available before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "customer_amount_zscore",
+    "feature_family": "customer_behavior",
+    "description": "Historical customer behavior available before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "device_txn_count_5m",
+    "feature_family": "velocity",
+    "description": "Count of strictly earlier transactions in a bounded time window.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "device_txn_count_1h",
+    "feature_family": "velocity",
+    "description": "Count of strictly earlier transactions in a bounded time window.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "instrument_txn_count_5m",
+    "feature_family": "velocity",
+    "description": "Count of strictly earlier transactions in a bounded time window.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "instrument_txn_count_1h",
+    "feature_family": "velocity",
+    "description": "Count of strictly earlier transactions in a bounded time window.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "device_account_count_before",
+    "feature_family": "entity_reuse",
+    "description": "Historical entity relationship count before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "device_merchant_count_before",
+    "feature_family": "entity_reuse",
+    "description": "Historical entity relationship count before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "instrument_account_count_before",
+    "feature_family": "entity_reuse",
+    "description": "Historical entity relationship count before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "instrument_merchant_count_before",
+    "feature_family": "entity_reuse",
+    "description": "Historical entity relationship count before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "other_customer_device_count_before",
+    "feature_family": "entity_reuse",
+    "description": "Historical entity relationship count before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "other_customer_instrument_count_before",
+    "feature_family": "entity_reuse",
+    "description": "Historical entity relationship count before the transaction.",
+    "point_in_time_safe": true,
+    "expected_data_type": "integer"
+  },
+  {
+    "feature_name": "seconds_since_customer_last_transaction",
+    "feature_family": "recency",
+    "description": "Seconds since the entity's previous transaction; -1 for first observation.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "seconds_since_device_last_transaction",
+    "feature_family": "recency",
+    "description": "Seconds since the entity's previous transaction; -1 for first observation.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  },
+  {
+    "feature_name": "seconds_since_instrument_last_transaction",
+    "feature_family": "recency",
+    "description": "Seconds since the entity's previous transaction; -1 for first observation.",
+    "point_in_time_safe": true,
+    "expected_data_type": "float"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "threshold": 0.5,
+  "precision": 0.5113636363636364,
+  "recall": 1.0,
+  "f1": 0.6766917293233082,
+  "confusion_matrix": [
+    [
+      1412,
+      43
+    ],
+    [
+      0,
+      45
+    ]
+  ],
+  "false_positive_rate": 0.029553264604810996,
+  "false_negative_rate": 0.0,
+  "false_positives": 43,
+  "false_negatives": 0,
+  "abuse_detected": 45,
+  "abuse_missed": 0,
+  "total_cost": 215.0,
+  "pr_auc": 0.8085690332277923,
+  "roc_auc": 0.9944864452080947,
+  "accuracy": 0.9713333333333334,
+  "selection_split": "validation",
+  "false_positive_cost": 5.0,
+  "false_negative_cost": 100.0
+}

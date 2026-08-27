@@ -1,0 +1,20 @@
+[
+  {
+    "transaction_id": "txn_04973",
+    "risk_level": "LOW",
+    "risk_score": 30.0,
+    "recommended_action": "ALLOW"
+  },
+  {
+    "transaction_id": "txn_08710",
+    "risk_level": "HIGH",
+    "risk_score": 78.7,
+    "recommended_action": "REVIEW"
+  },
+  {
+    "transaction_id": "txn_07978",
+    "risk_level": "CRITICAL",
+    "risk_score": 100.0,
+    "recommended_action": "ESCALATE"
+  }
+]

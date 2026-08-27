@@ -1,0 +1,18 @@
+{
+  "model": "HistGradientBoostingClassifier",
+  "feature_count": 64,
+  "behavioral_feature_count": 32,
+  "graph_feature_count": 32,
+  "thresholds": {
+    "behavioral_baseline": 0.5,
+    "graph_only": 0.6,
+    "behavioral_graph": 0.4
+  },
+  "selected_threshold": 0.4,
+  "selection_split": "validation",
+  "selection_method": "minimum validation total simulated cost; ties broken by validation F1",
+  "false_positive_cost": 5.0,
+  "false_negative_cost": 100.0,
+  "risk_score": "100 * model probability; not calibrated unless separately calibrated",
+  "random_state": 42
+}

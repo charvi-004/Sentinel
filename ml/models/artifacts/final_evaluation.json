@@ -1,0 +1,55 @@
+{
+  "dataset": {
+    "test_transactions": 1500,
+    "abuse_transactions": 45,
+    "normal_transactions": 1455
+  },
+  "model": {
+    "name": "logistic_regression",
+    "threshold": 0.5
+  },
+  "detection_metrics": {
+    "test_transactions": 1500,
+    "abuse_transactions": 45,
+    "normal_transactions": 1455,
+    "precision": 0.5113636363636364,
+    "recall": 1.0,
+    "f1": 0.6766917293233082,
+    "pr_auc": 0.8085690332277923,
+    "roc_auc": 0.9944864452080947,
+    "false_positives": 43,
+    "false_negatives": 0,
+    "false_positive_rate": 0.029553264604810996,
+    "false_negative_rate": 0.0,
+    "false_positive_cost": 215.0,
+    "false_negative_cost": 0.0,
+    "total_cost": 215.0
+  },
+  "business_cost": {
+    "false_positive_cost": 5.0,
+    "false_negative_cost": 100.0,
+    "total_cost": 215.0
+  },
+  "operations": {
+    "counts": {
+      "ALLOW": 1400,
+      "MONITOR": 12,
+      "REVIEW": 20,
+      "ESCALATE": 68
+    },
+    "percentage_escalated_reviewed": 5.87
+  },
+  "evidence": {
+    "evidence_coverage_rate": 100.0,
+    "high_or_critical_cases_checked": 88
+  },
+  "ai_safety": {
+    "risk_score_immutable": true,
+    "risk_level_immutable": true,
+    "recommended_action_immutable": true,
+    "ground_truth_excluded": true,
+    "invalid_ai_output_safe": true,
+    "missing_evidence_safe": true,
+    "deterministic_fallback_works": true
+  }
+}
