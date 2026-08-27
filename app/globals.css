@@ -1,0 +1,4 @@
+@import 'tailwindcss';
+:root{--navy:#012652;--blue:#0D94FB;--canvas:#F7F9FC;--surface:#fff;--muted:#5B6B82;--critical:#D64545;--high:#E08A2E;--medium:#D6B32E;--low:#2E9E5B;--line:#E3E9F2}
+*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--navy);font-family:Inter,ui-sans-serif,system-ui,sans-serif}button,select{font:inherit}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.card{background:var(--surface);border:1px solid var(--line);border-radius:10px}.muted{color:var(--muted)}
+@keyframes slide{from{transform:translateX(100%)}to{transform:translateX(0)}}.slide{animation:slide .22s ease-out}
