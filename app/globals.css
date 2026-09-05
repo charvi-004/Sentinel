@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-navy: #012652;
+  --color-brand-blue: #0D94FB;
+  --color-canvas: #F7F9FC;
+  --color-risk-critical: #D64545;
+  --color-risk-high: #E08A2E;
+  --color-risk-medium: #D6B32E;
+  --color-risk-low: #2E9E5B;
+  --color-ink-muted: #5B6B82;
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+:root { --line: #E3E9F2; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #F7F9FC; color: #012652; font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif; }
+button, select { font: inherit; }
+@keyframes slide-in { from { transform: translateX(100%); } to { transform: translateX(0); } }

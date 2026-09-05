@@ -1,0 +1,10 @@
+{
+  "model": "logistic_regression",
+  "threshold": 0.5,
+  "selection_split": "validation",
+  "selection_method": "minimum validation total simulated cost; ties broken by validation F1",
+  "class_weight": "balanced",
+  "false_positive_cost": 5.0,
+  "false_negative_cost": 100.0,
+  "random_state": 42
+}

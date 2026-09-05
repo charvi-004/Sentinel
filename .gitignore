@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+*.log
+
+data/raw/*
+data/processed/*
+data/test/*
+
+.ipynb_checkpoints/
+# Next.js
+node_modules/
+.next/
+out/
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+*.tsbuildinfo

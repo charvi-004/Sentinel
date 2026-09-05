@@ -1,0 +1,78 @@
+{
+  "experiment": "naive_rule_baseline",
+  "dataset": {
+    "total_transactions": 10000,
+    "split_counts": {
+      "train": 7000,
+      "validation": 1500,
+      "test": 1500
+    },
+    "split_method": "chronological 70/15/15",
+    "features_source": "data/processed/features.csv"
+  },
+  "frozen_rule": {
+    "description": "FLAG if ANY of: customer_txn_count_30m >= 2, customer_txn_count_1h >= 3, device_account_count_before >= 10, instrument_account_count_before >= 6",
+    "conditions": {
+      "customer_txn_count_30m": {
+        "operator": ">=",
+        "threshold": 2
+      },
+      "customer_txn_count_1h": {
+        "operator": ">=",
+        "threshold": 3
+      },
+      "device_account_count_before": {
+        "operator": ">=",
+        "threshold": 10
+      },
+      "instrument_account_count_before": {
+        "operator": ">=",
+        "threshold": 6
+      }
+    },
+    "threshold_derivation": "training-distribution observations; not tuned on validation or test labels"
+  },
+  "cost_assumptions": {
+    "false_positive_cost": 5.0,
+    "false_negative_cost": 100.0,
+    "note": "Synthetic test-set evaluation costs; not production fraud savings"
+  },
+  "naive_rule_test": {
+    "model": "naive_rule",
+    "precision": 0.04027777777777778,
+    "recall": 0.6444444444444445,
+    "f1": 0.07581699346405228,
+    "false_positive_rate": 0.474914089347079,
+    "false_negative_rate": 0.35555555555555557,
+    "false_positives": 691,
+    "false_negatives": 16,
+    "true_positives": 29,
+    "true_negatives": 764,
+    "flagged": 720,
+    "flag_rate": 0.48,
+    "test_transactions": 1500,
+    "simulated_cost": 5055.0,
+    "false_positive_cost": 5.0,
+    "false_negative_cost": 100.0
+  },
+  "production_lr_test": {
+    "model": "behavioral_logistic_regression",
+    "threshold": 0.5,
+    "precision": 0.5113636363636364,
+    "recall": 1.0,
+    "f1": 0.6766917293233082,
+    "false_positive_rate": 0.029553264604810996,
+    "false_negatives": 0,
+    "false_positives": 43,
+    "simulated_cost": 215.0,
+    "flagged": 88,
+    "source_artifact": "ml/models/artifacts/test_metrics.json"
+  },
+  "comparison": {
+    "precision_delta": -0.47108585858585855,
+    "recall_delta": -0.3555555555555555,
+    "f1_delta": -0.600874735859256,
+    "simulated_cost_delta": 4840.0,
+    "false_positives_delta": 648
+  }
+}
